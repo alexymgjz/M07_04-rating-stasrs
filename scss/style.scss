@@ -11,6 +11,7 @@ body{
             align-items: center;
             justify-content: space-evenly;
             background:rgb(92, 47, 47);
+            border-radius: 13px;
             .rating{
                 display: flex;
                 align-items: center;
@@ -18,7 +19,7 @@ body{
                 width: 400px;
                 height: 100px;
                 padding-top: 0 ;
-                transform: rotatez(180deg); 
+                transform: rotatez(180deg);  
 
             .rating__star{
                 font-size: 36px;
