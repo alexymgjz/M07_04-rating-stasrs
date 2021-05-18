@@ -26,42 +26,33 @@ body .wrapper .rating .rating__star {
   color: #ffbf00;
   transform: rotate(35deg);
 }
-body .wrapper .rating .uno:hover ~ i, body .wrapper .rating .uno:hover {
+body .wrapper .rating .uno:hover, body .wrapper .rating .uno:hover ~ a {
   color: #00ff62;
   transform: rotatez(-250deg);
   transition: ease-in-out;
   transition-duration: 1s;
 }
-body .wrapper .rating .uno:hover ~ i:target, body .wrapper .rating .uno:hover:target {
-  color: #ff0000;
-}
-body .wrapper .rating .dos:hover ~ i, body .wrapper .rating .dos:hover {
+body .wrapper .rating .dos:hover ~ a, body .wrapper .rating .dos:hover {
   color: #00ff62;
   transform: rotatez(-250deg);
   transition: ease-in-out;
   transition-duration: 1s;
 }
-body .wrapper .rating .tres:hover, body .wrapper .rating .tres:hover ~ i {
+body .wrapper .rating .tres:hover, body .wrapper .rating .tres:hover ~ a {
   color: #00ff62;
   transform: rotatez(-250deg);
   transition: ease-in-out;
   transition-duration: 1s;
 }
-body .wrapper .rating .cuatro:hover, body .wrapper .rating .cuatro:hover ~ i {
+body .wrapper .rating .cuatro:hover, body .wrapper .rating .cuatro:hover ~ a {
   color: #00ff62;
   transform: rotatez(-250deg);
   transition: ease-in-out;
   transition-duration: 1s;
 }
-body .wrapper .rating .cinco:hover, body .wrapper .rating .cinco:hover ~ i {
+body .wrapper .rating .cinco:hover, body .wrapper .rating .cinco:hover ~ a {
   color: #00ff62;
   transform: rotatez(-250deg);
-  transition: ease-in-out;
-  transition-duration: 1s;
-}
-body .wrapper .rating .rating__star:nth-child(-n+5):visited {
-  color: #0aca54;
-  transform: rotatez(-215deg);
   transition: ease-in-out;
   transition-duration: 1s;
 }

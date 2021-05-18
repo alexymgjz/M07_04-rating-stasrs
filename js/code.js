@@ -1,27 +1,25 @@
 
     const ratingStars = [...document.getElementsByClassName("rating__star")];
-    console.log(ratingStars);
-    const ratingStars1 =  ratingStars.reverse()
-    console.log(ratingStars1);
-    const container = document.querySelector('.container');
-    const cuerpo = document.querySelector('.container');
+    const ratingStars1 =  ratingStars.reverse();
+    const cuerpo = document.getElementById('cuerpo');
     const resultado = document.getElementById('rating');
-    function rating() {  
-        for (const ratevalue of ratingStars1) {
+    function rating(stars) {  
+        for (const ratevalue of stars) {
             ratevalue.onclick = () =>{
-                posicion = ratingStars1.indexOf(ratevalue);
+                posicion = stars.indexOf(ratevalue);
                 resultado.innerHTML =`${posicion+1}/5`
-                    for (const star of ratingStars1) {
+                    for (const star of stars) {
                     star.classList.remove('fas');
                 }
-                for (let i = 0; i < ratingStars1.length; i++) {
+                for (let i = 0; i < stars.length; i++) {
                     if (i<=posicion) {
-                    ratingStars1[i].classList.add('fas');
+                    stars[i].classList.add('fas');
                     }
                 }
             }
         }
-    }
+    } 
+    rating(ratingStars1);
 
     function restart() {
             resultado.innerHTML =`0/5`;
@@ -30,11 +28,10 @@
             }
     }
 
+    cuerpo.addEventListener('mouseleave', restart);
 
-/*  ejemplo con map
-const ratingStars = [...document.getElementsByClassName("rating__star")];
 
-function executeRating(stars) {
+/*  function executeRating(stars) {
 const starClassActive = "rating__star fas fa-star";
 const starClassInactive = "rating__star far fa-star";
 const starsLength = stars.length;
@@ -51,4 +48,5 @@ star.onclick = () => {
 };
 });
 }
-executeRating(ratingStars); */
+executeRating(ratingStars); 
+ */
