@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+body .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #5c2f2f;
+}
+body .wrapper .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 100px;
+  padding-top: 0;
+  transform: rotatez(180deg);
+}
+body .wrapper .rating .rating__star {
+  font-size: 36px;
+  color: #ffbf00;
+  transform: rotate(35deg);
+}
+body .wrapper .rating .uno:hover ~ i, body .wrapper .rating .uno:hover {
+  color: #00ff62;
+  transform: rotatez(-250deg);
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+body .wrapper .rating .uno:hover ~ i:target, body .wrapper .rating .uno:hover:target {
+  color: #ff0000;
+}
+body .wrapper .rating .dos:hover ~ i, body .wrapper .rating .dos:hover {
+  color: #00ff62;
+  transform: rotatez(-250deg);
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+body .wrapper .rating .tres:hover, body .wrapper .rating .tres:hover ~ i {
+  color: #00ff62;
+  transform: rotatez(-250deg);
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+body .wrapper .rating .cuatro:hover, body .wrapper .rating .cuatro:hover ~ i {
+  color: #00ff62;
+  transform: rotatez(-250deg);
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+body .wrapper .rating .cinco:hover, body .wrapper .rating .cinco:hover ~ i {
+  color: #00ff62;
+  transform: rotatez(-250deg);
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+body .wrapper .rating .rating__star:nth-child(-n+5):visited {
+  color: #0aca54;
+  transform: rotatez(-215deg);
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+body .wrapper .text {
+  font-size: 44px;
+  color: #ffbf00;
+  border-radius: 13px;
+  background-color: #00ff8050;
+  padding: 0 5px;
+}

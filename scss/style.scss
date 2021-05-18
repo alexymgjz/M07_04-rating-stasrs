@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background:rgb(92, 47, 47);
+            .rating{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 400px;
+                height: 100px;
+                padding-top: 0 ;
+                transform: rotatez(180deg);
+
+            .rating__star{
+                font-size: 36px;
+                color: #ffbf00;
+                transform:rotate(35deg) ;
+            }
+            
+            
+            
+            .uno:hover ~ i,.uno:hover{
+                color: #00ff62; 
+                transform: rotatez(-250deg);
+                transition: ease-in-out;
+                transition-duration: 1s;
+                &:target{
+                    color: #ff0000;  
+                }
+            }
+            .dos:hover ~ i,.dos:hover{
+                color: #00ff62; 
+                transform: rotatez(-250deg);
+                transition: ease-in-out;
+                transition-duration: 1s; 
+            }
+            
+            .tres:hover,.tres:hover ~ i{
+                color: #00ff62; 
+                transform: rotatez(-250deg);
+                transition: ease-in-out;
+                transition-duration: 1s; 
+            }
+            
+            .cuatro:hover,.cuatro:hover ~ i{
+                color: #00ff62; 
+                transform: rotatez(-250deg);
+                transition: ease-in-out;
+                transition-duration: 1s; 
+            }
+            
+            .cinco:hover,.cinco:hover ~ i{
+                color: #00ff62; 
+                transform: rotatez(-250deg);
+                transition: ease-in-out;
+                transition-duration: 1s; 
+            } 
+            
+            .rating__star:nth-child(-n+5):visited{
+                color: rgb(10, 202, 84); 
+                transform: rotatez(-215deg);
+                transition: ease-in-out;
+                transition-duration: 1s;
+            } 
+
+
+            }
+            .text{
+                font-size: 44px;
+                
+                color:#ffbf00;
+                border-radius: 13px;
+                background-color: #00ff8050;
+                padding:0 5px;
+            }
+        }
+}
