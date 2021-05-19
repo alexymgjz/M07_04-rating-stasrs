@@ -24,6 +24,7 @@ body{
             .rating__star{
                 font-size: 36px;
                 color: #ffbf00;
+               
                 transform:rotate(35deg) ;
             }
 
@@ -59,12 +60,11 @@ body{
                 transform: rotatez(-250deg);
                 transition: ease-in-out;
                 transition-duration: 1s;  
-            } 
+            }  
             
             }
             .text{
                 font-size: 44px;
-                
                 color:#ffbf00;
                 border-radius: 13px;
                 background-color: #00ff8050;
